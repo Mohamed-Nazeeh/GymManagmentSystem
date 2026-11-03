@@ -1,0 +1,21 @@
+﻿
+<div class="detail-item mb-4">
+    <div class="d-flex align-items-center mb-2">
+        <div class="icon-box me-3">
+            <i class="bi @(Model.IsActive ? "bi-check-circle-fill text-success" : "bi-x-circle-fill text-danger") fs-4"></i>
+        </div>
+        <div>
+            <h6 class="mb-0 text-muted">Status</h6>
+            <p class="mb-0">
+                @if (Model.IsActive)
+                {
+                    <span class="badge bg-success">Active</span>
+                }
+                else
+                {
+                    <span class="badge bg-danger">Inactive</span>
+                }
+            </p>
+        </div>
+    </div>
+</div>
